@@ -1,0 +1,8 @@
+GET http://localhost:5000/v1/widgets/foo
+###
+
+GET http://localhost:5000/v1/things/foo
+###
+
+GET http://localhost:5000/swagger/v1/swagger.json
+###
