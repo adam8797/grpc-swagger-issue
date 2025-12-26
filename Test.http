@@ -1,8 +1,13 @@
+# Hits the ConcreteWidgetService handler, and works correctly
+# matching the pattern /v1/{name=widgets/*}
 GET http://localhost:5000/v1/widgets/foo
 ###
 
+# Hits the ConcreteThingService handler, and works correctly
+# matching the pattern /v1/{name=things/*}
 GET http://localhost:5000/v1/things/foo
 ###
 
+# The swagger endpoint fails to generate
 GET http://localhost:5000/swagger/v1/swagger.json
 ###

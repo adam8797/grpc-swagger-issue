@@ -16,7 +16,6 @@ builder.Services.AddSwaggerGen(c =>
 builder.WebHost.UseKestrel(x =>
 {
     x.ListenAnyIP(5000, b => b.Protocols = HttpProtocols.Http1);
-    x.ListenAnyIP(5001, b => b.Protocols = HttpProtocols.Http2);
 });
 
 var app = builder.Build();
